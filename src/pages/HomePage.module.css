@@ -1,0 +1,76 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #333;
+    color: #fff;
+    font-family: 'Final Fantasy', sans-serif;
+}
+
+.rowA {
+    flex: 0 0 auto; /* RowA takes constant space */
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.rowB {
+    flex: 0 0 auto; /* RowB takes constant space */
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto; /* Add horizontal scroll */
+    white-space: nowrap; /* Prevent wrapping to new lines */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #444;
+    height: 180px;
+}
+
+.rowB::-webkit-scrollbar {
+    height: 8px;
+}
+
+.rowB::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+}
+
+.rowB::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.rowC {
+    flex: 1 1 auto; /* RowC grows and shrinks */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    gap: 10px;
+    padding: 10px;
+    overflow-y: auto; /* Add vertical scroll if necessary */
+}
+
+.levelSlider {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    margin-right: 10px;
+}
+
+.input {
+    width: 50px;
+    text-align: center;
+}
+
+.stackItem {
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Final Fantasy', sans-serif;
+    width: 200px; /* Ensure the width matches the SkillComponent width */
+    height: 200px; /* Ensure the height matches the SkillComponent height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}

@@ -1,0 +1,34 @@
+.skillComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 5px;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: 'Final Fantasy', sans-serif;
+    cursor: pointer;
+    width: 200px; /* Ensure the width matches the image width */
+}
+
+.imageContainer {
+    width: 100px; /* Ensure the width matches the image width */
+    height: 100px; /* Ensure the height matches the image height */
+}
+
+.skillImage {
+    width: 100%;
+    height: 100%;
+}
+
+.detailsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Space between the image and the text */
+}
+
+.skillName, .skillPotency {
+    font-size: 14px;
+}
